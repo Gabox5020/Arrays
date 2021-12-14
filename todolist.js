@@ -10,5 +10,14 @@ var tareas = [];
      var txtTarea = document.getElementById("txtTarea");
      var tarea = txtTarea.value;
        tareas.push(tarea);
-       alert(tareas)
+       mostrarTareas();
 }
+
+   function mostrarTareas() {
+       var listado = document.getElementById("listado");
+       var html = "";
+       for (var tarea of tareas) {
+            html += tarea + "<br/>";
+       }
+       listado.innerHTML = html;
+   }
