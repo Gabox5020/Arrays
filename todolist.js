@@ -6,5 +6,7 @@ function iniciar() {
 }
 
 function clickBtnAgregar() {
-    alert("CLICK")
+   var txtTarea = document.getElementById("txtTarea");
+   var tarea = txtTarea.value;
+    alert(tarea)
 }
