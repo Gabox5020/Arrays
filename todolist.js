@@ -16,8 +16,10 @@ var tareas = [];
    function mostrarTareas() {
        var listado = document.getElementById("listado");
        var html = "";
+       debugger;
        for (var tarea of tareas) {
             html += tarea + "<br/>";
        }
        listado.innerHTML = html;
+
    }
